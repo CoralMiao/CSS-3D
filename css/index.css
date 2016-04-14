@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.container_top {
+    width: 160px;
+    height: 160px;
+    margin: 80px auto 0 auto;
+}
+
+.container,
+.container_left,
+.container_right,
+.container_bottom {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    margin-top: -80px;
+    margin-left: -80px;
+}
+
+.container_left {
+    margin-top: -80px;
+    margin-left: -480px;
+}
+
+.container_right {
+    margin-top: -80px;
+    margin-left: 400px;
+}
+
+.container_bottom {
+    margin-left: -80px;
+    margin-top: 320px;
+}
+
+
+/*定位结束*/
+
+.content,
+.content_top,
+.content_left,
+.content_right,
+.content_bottom {
+    /*动画效果名称，每次执行时间，执行次数，运动轨迹*/
+    -webkit-animation: cartoon 5s infinite ease-in-out;
+    -o-animation: cartoon 5s infinite ease-in-out;
+    animation: cartoon 5s infinite ease-in-out;
+    /*进入3D效果*/
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    /*透视距离*/
+    /*-webkit-perspective: 138PX;
+  -moz-perspective: 138PX;
+  -ms-perspective: 138PX;
+  perspective: 138PX;*/
+    /*透视角度*/
+    /*-webkit-perspective-origin: -25% -40px;
+  -moz-perspective-origin: -25% -40px;
+  -ms-perspective-origin: -25% -40px;
+  perspective-origin: -25% -40px;*/
+    /*指定当前旋转基准点，使其绕着点旋转，属性值分别为XYZ三个轴的坐标*/
+    -webkit-transform-origin: 80px 80px 0;
+    -moz-transform-origin: 80px 80px 0;
+    -ms-transform-origin: 80px 80px 0;
+    -o-transform-origin: 80px 80px 0;
+    transform-origin: 80px 80px 0;
+    opacity: 0.4;
+}
+
+.content {
+    /*动画效果*/
+    -webkit-animation-name: mid-cartoon;
+    -o-animation-name: mid-cartoon;
+    animation-name: mid-cartoon;
+}
+
+
+/*动画结束*/
+
+.con-son1 {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.con-son-top,
+.con-son-left,
+.con-son-right,
+.con-son-bottom {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.con-son-top {
+    background: #FF3273;
+}
+
+.con-son-left {
+    background: #D5FF00;
+}
+
+.con-son-right {
+    background: #FF8902;
+}
+
+.con-son-bottom {
+    background: #D300FE;
+}
+
+.content .one {
+    background: -webkit-linear-gradient( left, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px), -webkit-linear-gradient( top, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+    -webkit-background-size: 40px 40px;
+    background-color: #12F7FE;
+}
+
+.content .two {
+    background: -webkit-linear-gradient( left, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px), -webkit-linear-gradient( top, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+    -webkit-background-size: 40px 40px;
+    background-color: #CDFF00;
+}
+
+.content .three {
+    background: -webkit-linear-gradient( left, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px), -webkit-linear-gradient( top, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+    -webkit-background-size: 40px 40px;
+    background-color: #B933F8;
+}
+
+.content .four {
+    background: -webkit-linear-gradient( left, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px), -webkit-linear-gradient( top, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+    -webkit-background-size: 40px 40px;
+    background-color: #FD4636;
+}
+
+.content .five {
+    background: -webkit-linear-gradient( left, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px), -webkit-linear-gradient( top, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+    -webkit-background-size: 40px 40px;
+    background-color: #C7E20A;
+}
+
+.content .six {
+    background: -webkit-linear-gradient( left, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px), -webkit-linear-gradient( top, rgba(0, 6, 10, 0.5) 0px, rgba(0, 6, 10, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+    -webkit-background-size: 40px 40px;
+    background-color: #0BE0E7;
+}
+
+
+/*颜色设置结束*/
+
+.one {
+    -webkit-transform: translateZ(80px);
+    -ms-transform: translateZ(80px);
+    -o-transform: translateZ(80px);
+    transform: translateZ(80px);
+}
+
+.two {
+    -webkit-transform: rotateX(-90deg) translateZ(80px);
+    -ms-transform: rotateX(-90deg) translateZ(80px);
+    -o-transform: rotateX(-90deg) translateZ(80px);
+    transform: rotateX(-90deg) translateZ(80px);
+}
+
+.three {
+    -webkit-transform: rotateY(90deg) translateZ(80px);
+    -ms-transform: rotateY(90deg) translateZ(80px);
+    -o-transform: rotateY(90deg) translateZ(80px);
+    transform: rotateY(90deg) translateZ(80px);
+}
+
+.four {
+    -webkit-transform: rotateY(-90deg) translateZ(80px);
+    -ms-transform: rotateY(-90deg) translateZ(80px);
+    -o-transform: rotateY(-90deg) translateZ(80px);
+    transform: rotateY(-90deg) translateZ(80px);
+}
+
+.five {
+    -webkit-transform: rotateX(90deg) translateZ(80px);
+    -ms-transform: rotateX(90deg) translateZ(80px);
+    -o-transform: rotateX(90deg) translateZ(80px);
+    transform: rotateX(90deg) translateZ(80px);
+}
+
+.six {
+    -webkit-transform: translateZ(-80px);
+    -ms-transform: translateZ(-80px);
+    -o-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+}
+
+@-webkit-keyframes cartoon {
+    from {
+        -webkit-transform: translateZ(-10em) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10em) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10em) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10em) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-moz-keyframes cartoon {
+    from {
+        -webkit-transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-o-keyframes cartoon {
+    from {
+        -webkit-transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-ms-keyframes cartoon {
+    from {
+        -webkit-transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes mid-cartoon {
+    from {
+        -webkit-transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10px) rotateZ(-360deg) rotateX(-360deg) rotateY(-360deg);
+    }
+}
+
+@-moz-keyframes mid-cartoon {
+    from {
+        -webkit-transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10px) rotateZ(-360deg) rotateX(-360deg) rotateY(-360deg);
+    }
+}
+
+@-o-keyframes mid-cartoon {
+    from {
+        -webkit-transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10px) rotateZ(-360deg) rotateX(-360deg) rotateY(-360deg);
+    }
+}
+
+@-ms-keyframes mid-cartoon {
+    from {
+        -webkit-transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        transform: translateZ(-10px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10px) rotateZ(360deg) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10px) rotateZ(-360deg) rotateX(-360deg) rotateY(-360deg);
+    }
+}
+
+
+/*动画结束*/
